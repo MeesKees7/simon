@@ -9,30 +9,104 @@
 </head>
 
 <body>
+
   <h1>Simon Game</h1>
-  <h2 id="level-title">Klik op sart om te beginnen.</h1>
 
-    <div class="container">
-      <div lass="row">
-        <div type="button" id="green" class="btn green">
-        </div>
-        <div type="button" id="red" class="btn red">
-        </div>
-      </div>
+  <table>
+    <tr>
+      <td class="cel1">
+        <div class="niveauContainer links zij">
+          <h2 id="kiesVariatie">Kies een variatie:</h2>
+          <div class="variatie1">
+            <div class="niv1">Variatie 1</div>
+            <p>
+              Gesproken woorden <br />Hele reeks.
+            </p>
+            <p>
+            </p>
+          </div>
+          <div class="variatie2">
+            <div class="niv2">Variatie 2</div>
+            <p>
+              Piano geluid <br />Hele reeks.
+            </p>
+            <p>
 
-      <div class="row">
-        <div type="button" id="yellow" class="btn yellow">
+            </p>
+            </p>
+          </div>
+          <div class="variatie3">
+            <div class="niv3">Variatie 3</div>
+            <p>
+              Piano geluid <br />Alleen laatste.
+            </p>
+            <p>
+            </p>
+          </div>
+          <div class="andereVariatieKiezen hidden">
+            Spel met andere variatie spelen.
+          </div>
         </div>
-        <div type="button" id="blue" class="btn blue">
+      </td>
+      <td class="cel2">
+        <div class="container midden">
+          <div lass="row">
+            <div type="button" id="green" class="btn green">
+            </div>
+            <div type="button" id="red" class="btn red">
+            </div>
+          </div>
+
+          <div class="row">
+            <div type="button" id="yellow" class="btn yellow">
+            </div>
+            <div type="button" id="blue" class="btn blue">
+            </div>
+          </div>
+          <div type="button" class="startknop hidden">START</div>
+
         </div>
-      </div>
-      <div type="button" class="startknop">START</div>
+      </td>
+      <td class="cel3">
+        <div class="rechts zij">
+          <h2 id="huidigeScore">Score: 0</h2>
 
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="game.js">
+          <p>
+            Hoogste scores
+          </p>
+          <div class="hoogste1Wrapper">
+            <p>
+              Variatie 1
+            </p>
+            <div id="hoogste1">
+              0
+            </div>
+          </div>
+          <div class="hoogste2Wrapper">
+            <p>
+              Variatie 2
+            </p>
+            <div id="hoogste2">
+              0
+            </div>
+          </div>
+          <div class="hoogste3Wrapper">
+            <p>
+              Variatie 3
+            </p>
+            <div id="hoogste3">
+              0
+            </div>
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="game.js">
 
-    </script>
+  </script>
 </body>
 
 </html>
